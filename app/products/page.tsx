@@ -28,7 +28,7 @@ async function ProductsContainer({
 
   // Fetch unique categories for header/pills
   const allProducts = await prisma.product.findMany({ select: { category: true } });
-  const categories = Array.from(new Set(allProducts.map((p: { category: string }) => p.category)));
+  const categories = Array.from(new Set(allProducts.map((p: { category: string }) => p.category))) as string[];
 
   return (
     <>

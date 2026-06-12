@@ -28,7 +28,7 @@ async function ServicesContainer({
 
   // Fetch unique categories for header/pills
   const allServices = await prisma.service.findMany({ select: { category: true } });
-  const categories = Array.from(new Set(allServices.map((s: { category: string }) => s.category)));
+  const categories = Array.from(new Set(allServices.map((s: { category: string }) => s.category))) as string[];
 
   return (
     <>
