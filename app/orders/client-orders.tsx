@@ -37,7 +37,7 @@ export function formatBengaliDate(date: Date | string): string {
   return `${toBengaliNumber(day)} ${month} ${toBengaliNumber(year)}`;
 }
 
-type OrderItem = {
+export type OrderItem = {
   id: string;
   price: number;
   quantity: number;
@@ -47,7 +47,7 @@ type OrderItem = {
   };
 };
 
-type Order = {
+export type Order = {
   id: string;
   totalAmount: number;
   status: string; // PENDING, CONFIRMED, SHIPPED, DELIVERED, CANCELLED
@@ -56,7 +56,8 @@ type Order = {
   items: OrderItem[];
 };
 
-type Booking = {
+
+export type Booking = {
   id: string;
   date: Date | string;
   timeSlot: string;

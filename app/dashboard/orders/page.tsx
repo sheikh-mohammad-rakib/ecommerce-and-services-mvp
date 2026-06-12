@@ -2,14 +2,25 @@ import { getOrders } from "@/app/actions/checkout";
 import { getBookings } from "@/app/actions/bookings";
 import ClientOrdersManagement from "./client-orders-management";
 import type { Order, Booking } from "./client-orders-management";
+import type { Order as PrismaOrder, Booking as PrismaBooking, OrderItem, Product } from "@prisma/client";
 import { Suspense } from "react";
+
+type PrismaOrderWithRelations = PrismaOrder & {
+  user: { name: string | null; email: string | null } | null;
+  items: (OrderItem & { product: Product })[];
+};
+
+type PrismaBookingWithRelations = PrismaBooking & {
+  user: { name: string | null; email: string | null; mobile?: string | null } | null;
+  service: { name: string; price: number; duration: number };
+};
 
 async function OrdersContainer() {
   // Fetch orders and bookings in parallel using the admin-permissioned action functions
   const [orders, bookings] = await Promise.all([getOrders(), getBookings()]);
 
   // Serialize dates to prevent RSC boundary issues
-  const serializedOrders: Order[] = orders.map((order) => ({
+  const serializedOrders: Order[] = (orders as PrismaOrderWithRelations[]).map((order: PrismaOrderWithRelations) => ({
     id: order.id,
     createdAt: order.createdAt instanceof Date ? order.createdAt.toISOString() : String(order.createdAt),
     shippingAddress: order.shippingAddress,
@@ -23,7 +34,7 @@ async function OrdersContainer() {
       name: order.user?.name || null,
       email: order.user?.email || null,
     },
-    items: order.items.map((item) => ({
+    items: order.items.map((item: OrderItem & { product: Product }) => ({
       id: item.id,
       quantity: item.quantity,
       price: item.price,
@@ -33,7 +44,7 @@ async function OrdersContainer() {
     })),
   }));
 
-  const serializedBookings: Booking[] = bookings.map((booking) => ({
+  const serializedBookings: Booking[] = (bookings as PrismaBookingWithRelations[]).map((booking: PrismaBookingWithRelations) => ({
     id: booking.id,
     date: booking.date instanceof Date ? booking.date.toISOString() : String(booking.date),
     timeSlot: booking.timeSlot,

@@ -3,6 +3,7 @@ import AdminDashboard from "./admin-dashboard";
 import { Suspense } from "react";
 import { auth } from "@/auth";
 import { cacheLife, cacheTag } from "next/cache";
+import type { Order, OrderItem, Product } from "@prisma/client";
 
 async function getDashboardData() {
   "use cache";
@@ -37,7 +38,7 @@ async function AdminDashboardContainer() {
   if (!session?.user) return null;
 
   const { totalOrders, totalUsers, pendingOrders, allOrders, completedOrders } = await getDashboardData();
-  const totalRevenue = completedOrders.reduce((sum, order) => sum + order.totalAmount, 0);
+  const totalRevenue = completedOrders.reduce((sum: number, order: { totalAmount: number }) => sum + order.totalAmount, 0);
 
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const weeklyStats = daysOfWeek.map((day) => ({ day, count: 0 }));
@@ -58,10 +59,11 @@ async function AdminDashboardContainer() {
     };
   });
 
-  const serializedRecentOrders = allOrders.slice(0, 5).map((order) => ({
+  const serializedRecentOrders = allOrders.slice(0, 5).map((order: Order & { user: { name: string | null } | null; items: (OrderItem & { product: Product })[] }) => ({
     ...order,
     createdAt: order.createdAt instanceof Date ? order.createdAt.toISOString() : order.createdAt,
-    items: order.items.map((item) => ({
+    user: { name: order.user?.name ?? null },
+    items: order.items.map((item: OrderItem & { product: Product }) => ({
       ...item,
       createdAt: item.createdAt instanceof Date ? item.createdAt.toISOString() : item.createdAt,
     })),

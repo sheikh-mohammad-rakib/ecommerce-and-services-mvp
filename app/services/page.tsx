@@ -4,6 +4,7 @@ import ClientHomeComponents from "@/app/ui/client-home-components";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Suspense } from "react";
+import type { Service } from "@prisma/client";
 
 async function ServicesContainer({
   searchParams,
@@ -17,7 +18,7 @@ async function ServicesContainer({
   const services = await getServices(q, category);
 
   // Strip Date objects for RSC boundary safety
-  const serializedServices = services.map((s) => ({
+  const serializedServices = services.map((s: Service) => ({
     id: s.id,
     name: s.name,
     price: s.price,

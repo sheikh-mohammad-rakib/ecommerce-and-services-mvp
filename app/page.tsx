@@ -3,6 +3,7 @@ import prisma from "@/lib/prisma";
 import { Car, ShoppingBag, Flame, Wind, Snowflake, ArrowRight } from "lucide-react";
 import ClientHomeComponents from "@/app/ui/client-home-components";
 import { cacheLife, cacheTag } from "next/cache";
+import type { Product, Service } from "@prisma/client";
 
 export default async function Home() {
   "use cache";
@@ -23,7 +24,7 @@ export default async function Home() {
   });
 
   // Strip Date objects for RSC boundary safety
-  const serializedProducts = products.map((p) => ({
+  const serializedProducts = products.map((p: Product) => ({
     id: p.id,
     name: p.name,
     price: p.price,
@@ -32,7 +33,7 @@ export default async function Home() {
     stock: p.stock,
   }));
 
-  const serializedServices = services.map((s) => ({
+  const serializedServices = services.map((s: Service) => ({
     id: s.id,
     name: s.name,
     price: s.price,

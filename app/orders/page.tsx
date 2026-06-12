@@ -1,9 +1,19 @@
 import { getOrders } from "@/app/actions/checkout";
 import { getBookings } from "@/app/actions/bookings";
 import ClientOrders from "./client-orders";
+import type { Order, Booking, OrderItem } from "./client-orders";
+import type { Order as PrismaOrder, Booking as PrismaBooking, OrderItem as PrismaOrderItem } from "@prisma/client";
 import { auth } from "@/auth";
 import Link from "next/link";
 import { Suspense } from "react";
+
+type PrismaOrderForCustomer = PrismaOrder & {
+  items: (PrismaOrderItem & { product: { name: string; image: string } })[];
+};
+
+type PrismaBookingForCustomer = PrismaBooking & {
+  service: { name: string; price: number; image: string };
+};
 
 async function OrdersContainer() {
   const session = await auth();
@@ -23,14 +33,33 @@ async function OrdersContainer() {
   const [orders, bookings] = await Promise.all([getOrders(), getBookings()]);
 
   // Serialize dates to prevent RSC boundary issues
-  const serializedOrders = orders.map((order) => ({
-    ...order,
+  const serializedOrders: Order[] = (orders as PrismaOrderForCustomer[]).map((order: PrismaOrderForCustomer) => ({
+    id: order.id,
+    totalAmount: order.totalAmount,
+    status: order.status,
     createdAt: order.createdAt instanceof Date ? order.createdAt.toISOString() : order.createdAt,
+    paymentMethod: order.paymentMethod,
+    items: order.items.map((item: PrismaOrderItem & { product: { name: string; image: string } }) => ({
+      id: item.id,
+      price: item.price,
+      quantity: item.quantity,
+      product: {
+        name: item.product.name,
+        image: item.product.image,
+      },
+    })) as OrderItem[],
   }));
 
-  const serializedBookings = bookings.map((booking) => ({
-    ...booking,
+  const serializedBookings: Booking[] = (bookings as PrismaBookingForCustomer[]).map((booking: PrismaBookingForCustomer) => ({
+    id: booking.id,
     date: booking.date instanceof Date ? booking.date.toISOString() : booking.date,
+    timeSlot: booking.timeSlot,
+    status: booking.status,
+    service: {
+      name: booking.service.name,
+      price: booking.service.price,
+      image: booking.service.image,
+    },
   }));
 
   return <ClientOrders initialOrders={serializedOrders} initialBookings={serializedBookings} />;

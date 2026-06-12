@@ -2,6 +2,7 @@ import { auth } from "@/auth";
 import Link from "next/link";
 import prisma from "@/lib/prisma";
 import ClientNotifications from "./client-notifications";
+import type { Notification } from "@prisma/client";
 import { Suspense } from "react";
 
 async function NotificationsContainer() {
@@ -27,8 +28,12 @@ async function NotificationsContainer() {
   });
 
   // Serialize dates to prevent RSC boundary issues
-  const serializedNotifications = notifications.map((note) => ({
-    ...note,
+  const serializedNotifications = notifications.map((note: Notification) => ({
+    id: note.id,
+    title: note.title,
+    message: note.message,
+    type: note.type,
+    isRead: note.isRead,
     createdAt: note.createdAt instanceof Date ? note.createdAt.toISOString() : note.createdAt,
   }));
 
