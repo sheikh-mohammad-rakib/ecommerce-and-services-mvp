@@ -40,10 +40,12 @@ export default function CheckoutPage() {
   // Prefill user profile details from session
   useEffect(() => {
     if (session?.user) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setName(session.user.name || "");
-      if ((session.user as any).mobile) setMobile((session.user as any).mobile);
-      if ((session.user as any).address) setAddress((session.user as any).address);
-      if ((session.user as any).city) setCity((session.user as any).city);
+      const u = session.user as { mobile?: string; address?: string; city?: string };
+      if (u.mobile) setMobile(u.mobile);
+      if (u.address) setAddress(u.address);
+      if (u.city) setCity(u.city);
     }
   }, [session]);
 

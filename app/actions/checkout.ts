@@ -129,7 +129,7 @@ export async function getOrders() {
   if (!session?.user?.id) return [];
 
   const userId = session.user.id as string;
-  const role = (session.user as any).role;
+  const role = (session.user as { role?: string }).role;
 
   try {
     if (role === "ADMIN") {
@@ -153,7 +153,7 @@ export async function getOrders() {
 // Update order status (Admin only)
 export async function updateOrderStatus(orderId: string, status: string, paymentStatus?: string) {
   const session = await auth();
-  if (session?.user && (session.user as any).role !== "ADMIN") {
+  if (session?.user && (session.user as { role?: string }).role !== "ADMIN") {
     return { error: "Unauthorized. Admin access required." };
   }
 
@@ -164,7 +164,7 @@ export async function updateOrderStatus(orderId: string, status: string, payment
 
     if (!currentOrder) return { error: "Order not found." };
 
-    const updateData: any = { status };
+    const updateData: { status: string; paymentStatus?: string } = { status };
     if (paymentStatus) updateData.paymentStatus = paymentStatus;
 
     const order = await prisma.order.update({

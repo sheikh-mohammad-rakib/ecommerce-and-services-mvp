@@ -24,7 +24,9 @@ async function OrdersContainer() {
 
   return (
     <ClientOrdersManagement
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       initialOrders={serializedOrders as any}
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       initialBookings={serializedBookings as any}
     />
   );

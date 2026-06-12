@@ -77,7 +77,6 @@ async function AdminDashboardContainer() {
         weeklyStats: sortedWeeklyStats,
       }}
       recentOrders={serializedRecentOrders}
-      user={session.user!}
     />
   );
 }

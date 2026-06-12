@@ -55,7 +55,6 @@ export default function ServiceBookingClient({ service }: { service: Service }) 
 
   // Load booked slots when date changes
   useEffect(() => {
-    setErrorMsg("");
     startTransition(async () => {
       const booked = await getBookedSlots(service.id, selectedDate);
       setBookedSlots(booked);
@@ -136,7 +135,7 @@ export default function ServiceBookingClient({ service }: { service: Service }) 
             required
             min={getTomorrowString()}
             value={selectedDate}
-            onChange={(e) => setSelectedDate(e.target.value)}
+            onChange={(e) => { setSelectedDate(e.target.value); setErrorMsg(""); }}
             className="w-full bg-[#0a0d17] border border-zinc-800 rounded-xl py-3 px-4 text-xs text-zinc-200 focus:outline-none focus:border-primary transition-all font-mono"
           />
         </div>

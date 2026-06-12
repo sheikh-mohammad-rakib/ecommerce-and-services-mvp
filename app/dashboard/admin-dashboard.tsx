@@ -4,7 +4,6 @@ import { useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { updateOrderStatus } from "@/app/actions/checkout";
-import { formatBengaliPrice } from "@/app/ui/client-home-components";
 import { formatBengaliDate } from "@/app/orders/client-orders";
 import {
   ShoppingCart,
@@ -32,23 +31,16 @@ type RecentOrder = {
   items: { product: { name: string } }[];
 };
 
-type User = {
-  name?: string | null;
-  email?: string | null;
-  role?: string;
-};
 
 export default function AdminDashboard({
   stats,
   recentOrders,
-  user,
 }: {
   stats: Stats;
   recentOrders: RecentOrder[];
-  user: User;
 }) {
   const router = useRouter();
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
   const [orders, setOrders] = useState<RecentOrder[]>(recentOrders);
 
   const handleStatusChange = (orderId: string, currentStatus: string) => {

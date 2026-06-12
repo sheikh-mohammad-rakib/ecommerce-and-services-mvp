@@ -27,7 +27,7 @@ export default function Navbar() {
     if (!session?.user) return;
     const now = Date.now();
     if (notifCache && now - notifCache.ts < CACHE_TTL) {
-      setUnreadCount(notifCache.count);
+      Promise.resolve(notifCache.count).then((count) => setUnreadCount(count));
       return;
     }
     getUserNotifications().then((notes) => {

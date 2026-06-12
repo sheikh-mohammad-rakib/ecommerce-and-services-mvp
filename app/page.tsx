@@ -1,6 +1,6 @@
 import Link from "next/link";
 import prisma from "@/lib/prisma";
-import { Car, ShoppingBag, Flame, Wind, Snowflake, ShoppingCart, ArrowRight } from "lucide-react";
+import { Car, ShoppingBag, Flame, Wind, Snowflake, ArrowRight } from "lucide-react";
 import ClientHomeComponents from "@/app/ui/client-home-components";
 import { cacheLife, cacheTag } from "next/cache";
 

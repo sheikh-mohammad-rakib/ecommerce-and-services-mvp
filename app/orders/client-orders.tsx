@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { formatBengaliPrice } from "@/app/ui/client-home-components";
-import { FileText, ClipboardList } from "lucide-react";
+import { ClipboardList } from "lucide-react";
 
 // Helper to convert numbers to Bengali digits
 function toBengaliNumber(num: number | string): string {
@@ -52,6 +52,7 @@ type Order = {
   totalAmount: number;
   status: string; // PENDING, CONFIRMED, SHIPPED, DELIVERED, CANCELLED
   createdAt: Date | string;
+  paymentMethod: string;
   items: OrderItem[];
 };
 
@@ -75,7 +76,7 @@ export default function ClientOrders({
   initialBookings: Booking[];
 }) {
   const [activeTab, setActiveTab] = useState<"all" | "pending" | "delivered">("all");
-  const [selectedDetails, setSelectedDetails] = useState<any>(null);
+  const [selectedDetails, setSelectedDetails] = useState<(Order & { type: "order" }) | (Booking & { type: "booking" }) | null>(null);
 
   // Filter logic
   const filteredOrders = initialOrders.filter((order) => {
@@ -327,7 +328,7 @@ export default function ClientOrders({
 
                 <div className="border-t border-base-300/30 pt-3 flex flex-col gap-2">
                   <span className="font-bold text-base-content/60">আইটেম তালিকা:</span>
-                  {selectedDetails.items.map((item: any, i: number) => (
+                  {selectedDetails.items.map((item: OrderItem, i: number) => (
                     <div key={i} className="flex justify-between items-center text-base-content/80">
                       <span>
                         {item.product.name} (x{toBengaliNumber(item.quantity)})

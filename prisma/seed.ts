@@ -84,7 +84,7 @@ async function main() {
     },
   });
 
-  const waltonFridge = await prisma.product.create({
+  await prisma.product.create({
     data: {
       name: "Walton Fridge (WFB-2B6-R)",
       description: "Walton 264 Liter double door refrigerator in classic rich red gloss design.",
@@ -123,7 +123,7 @@ async function main() {
     },
   });
 
-  const fridgeService = await prisma.service.create({
+  await prisma.service.create({
     data: {
       name: "Fridge Maintenance Repairing",
       description: "Quick repair of cooling problems and gas charge for all refrigerator brands.",
@@ -139,7 +139,7 @@ async function main() {
 
   // 4. Create Mock Orders (Recent Orders in screenshots)
   // Order 1: #EF1DBO by Raj - TotalGas (12kg), 1x 1450 + 60 delivery = 1510
-  const order1 = await prisma.order.create({
+  await prisma.order.create({
     data: {
       id: "EF1DBO",
       userId: customerUser.id,
@@ -162,7 +162,7 @@ async function main() {
   });
 
   // Order 2: #IJP4TJ by Rakib - Gas Delivery, 1x 1250 + 60 delivery = 1310
-  const order2 = await prisma.order.create({
+  await prisma.order.create({
     data: {
       id: "IJP4TJ",
       userId: adminUser.id,
@@ -185,7 +185,7 @@ async function main() {
   });
 
   // Order 3: #2HQHRW by Rakib - Gas Delivery, 3x 1250 = 3750 + 60 delivery = 3810
-  const order3 = await prisma.order.create({
+  await prisma.order.create({
     data: {
       id: "2HQHRW",
       userId: adminUser.id,
@@ -208,7 +208,7 @@ async function main() {
   });
 
   // Order 4: #NRBOVA by Raj - Haier AC, 1x 49500 + 60 delivery = 49560
-  const order4 = await prisma.order.create({
+  await prisma.order.create({
     data: {
       id: "NRBOVA",
       userId: customerUser.id,

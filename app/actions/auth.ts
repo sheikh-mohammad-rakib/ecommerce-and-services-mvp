@@ -115,12 +115,13 @@ export async function loginUser(state: FormState, formData: FormData): Promise<F
     return {
       success: true,
     };
-  } catch (error: any) {
+  } catch (error) {
     // Check if it is a Next.js redirect error and rethrow it
+    const err = error as { message?: string; digest?: string };
     if (
-      error &&
-      (error.message === "NEXT_REDIRECT" ||
-        (typeof error.digest === "string" && error.digest.startsWith("NEXT_REDIRECT")))
+      err &&
+      (err.message === "NEXT_REDIRECT" ||
+        (typeof err.digest === "string" && err.digest.startsWith("NEXT_REDIRECT")))
     ) {
       throw error;
     }

@@ -14,7 +14,7 @@ export default function BottomNav() {
     return null;
   }
 
-  const isAdmin = (session?.user as any)?.role === "ADMIN";
+  const isAdmin = (session?.user as { role?: string } | undefined)?.role === "ADMIN";
 
   const navItems = [
     {

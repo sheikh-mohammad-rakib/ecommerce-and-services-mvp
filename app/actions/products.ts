@@ -2,7 +2,7 @@
 
 import prisma from "@/lib/prisma";
 import { auth } from "@/auth";
-import { revalidatePath, cacheLife, cacheTag, revalidateTag, updateTag } from "next/cache";
+import { revalidatePath, cacheLife, cacheTag, updateTag } from "next/cache";
 
 export async function getProducts(query?: string, category?: string) {
   "use cache";
@@ -50,7 +50,7 @@ export async function getProductById(id: string) {
 
 export async function createProduct(formData: FormData) {
   const session = await auth();
-  if (session?.user && (session.user as any).role !== "ADMIN") {
+  if (session?.user && (session.user as { role?: string }).role !== "ADMIN") {
     return { error: "Unauthorized. Admin access required." };
   }
 
@@ -91,7 +91,7 @@ export async function createProduct(formData: FormData) {
 
 export async function updateProduct(id: string, formData: FormData) {
   const session = await auth();
-  if (session?.user && (session.user as any).role !== "ADMIN") {
+  if (session?.user && (session.user as { role?: string }).role !== "ADMIN") {
     return { error: "Unauthorized. Admin access required." };
   }
 
@@ -103,7 +103,7 @@ export async function updateProduct(id: string, formData: FormData) {
   const category = formData.get("category") as string;
 
   try {
-    const updateData: any = {};
+    const updateData: { name?: string; description?: string; price?: number; image?: string; stock?: number; category?: string } = {};
     if (name) updateData.name = name;
     if (description) updateData.description = description;
     if (!isNaN(price)) updateData.price = price;
@@ -131,7 +131,7 @@ export async function updateProduct(id: string, formData: FormData) {
 
 export async function deleteProduct(id: string) {
   const session = await auth();
-  if (session?.user && (session.user as any).role !== "ADMIN") {
+  if (session?.user && (session.user as { role?: string }).role !== "ADMIN") {
     return { error: "Unauthorized. Admin access required." };
   }
 

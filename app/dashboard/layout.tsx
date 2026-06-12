@@ -16,7 +16,7 @@ async function AdminLayoutShellContainer({
     redirect("/login");
   }
 
-  const role = (session.user as any).role;
+  const role = (session.user as { role?: string }).role;
   if (role !== "ADMIN") {
     return (
       <div className="flex flex-col items-center justify-center gap-4 px-4 py-32 bg-base-100 flex-1 min-h-screen text-center text-base-content">
