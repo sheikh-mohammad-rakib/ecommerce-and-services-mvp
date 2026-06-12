@@ -1,6 +1,7 @@
 "use server";
 
 import prisma from "@/lib/prisma";
+import { Prisma } from "@prisma/client";
 import { auth } from "@/auth";
 import { revalidatePath } from "next/cache";
 
@@ -63,7 +64,7 @@ export async function placeOrder(params: {
     }
 
     // 2. Perform Transaction: Create Order, create OrderItems, decrement stocks
-    const order = await prisma.$transaction(async (tx) => {
+    const order = await prisma.$transaction(async (tx: Prisma.TransactionClient) => {
       // Decrement stock levels
       for (const item of items) {
         await tx.product.update({
