@@ -70,7 +70,7 @@ export async function getBookedSlots(serviceId: string, dateString: string) {
       select: { timeSlot: true },
     });
 
-    return bookings.map((b) => b.timeSlot);
+    return bookings.map((b: { timeSlot: string }) => b.timeSlot);
   } catch (error) {
     console.error("Error fetching booked slots:", error);
     return [];
