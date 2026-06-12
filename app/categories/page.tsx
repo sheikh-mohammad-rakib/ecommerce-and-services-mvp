@@ -12,8 +12,8 @@ export default async function CategoriesPage() {
   const products = await prisma.product.findMany({ select: { category: true } });
   const services = await prisma.service.findMany({ select: { category: true } });
 
-  const productCategories = Array.from(new Set(products.map((p) => p.category)));
-  const serviceCategories = Array.from(new Set(services.map((s) => s.category)));
+  const productCategories = Array.from(new Set(products.map((p: { category: string }) => p.category)));
+  const serviceCategories = Array.from(new Set(services.map((s: { category: string }) => s.category)));
 
   // helper to match icons
   const getCategoryIcon = (category: string) => {

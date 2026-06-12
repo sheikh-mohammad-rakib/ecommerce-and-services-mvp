@@ -21,7 +21,7 @@ export default async function DashboardCategoriesPage() {
 
   // Compute product categories and counts
   const productCatsMap: Record<string, { total: number; active: number }> = {};
-  products.forEach((p) => {
+  products.forEach((p: { category: string; active: boolean }) => {
     const cat = p.category || "General";
     if (!productCatsMap[cat]) {
       productCatsMap[cat] = { total: 0, active: 0 };
@@ -32,7 +32,7 @@ export default async function DashboardCategoriesPage() {
 
   // Compute service categories and counts
   const serviceCatsMap: Record<string, { total: number; active: number }> = {};
-  services.forEach((s) => {
+  services.forEach((s: { category: string; active: boolean }) => {
     const cat = s.category || "General";
     if (!serviceCatsMap[cat]) {
       serviceCatsMap[cat] = { total: 0, active: 0 };
