@@ -1,0 +1,3 @@
+use daisyUI skill
+use context7
+https://daisyui.com/llms.txt
