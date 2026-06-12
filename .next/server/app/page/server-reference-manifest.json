@@ -1,0 +1,29 @@
+{
+  "node": {
+    "00e8678dcc13be7f9f06f64e20cb782fe333152612": {
+      "workers": {
+        "app/page": {
+          "moduleId": 46496,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "exportedName": "getUserNotifications",
+      "filename": "app/actions/notifications.ts"
+    },
+    "803b9b8a0f99341def79c89d3f7d5b5f895f338b39": {
+      "workers": {
+        "app/page": {
+          "moduleId": 46496,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/page.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_CACHE_0",
+      "filename": "app/page.tsx"
+    }
+  },
+  "edge": {}
+}

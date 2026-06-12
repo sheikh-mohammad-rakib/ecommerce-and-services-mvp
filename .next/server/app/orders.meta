@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/orders/layout,_N_T_/orders/page,_N_T_/orders"
+  },
+  "postponed": "2678:[1,{\"nextSegmentId\":2,\"rootFormatContext\":{\"insertionMode\":0,\"selectedValue\":null,\"tagScope\":0,\"viewTransition\":null},\"progressiveChunkSize\":12800,\"resumableState\":{\"idPrefix\":\"\",\"nextFormID\":0,\"streamingFormat\":0,\"instructions\":96,\"hasBody\":true,\"hasHtml\":true,\"unknownResources\":{\"font\":{\"/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2\":[],\"/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2\":[]}},\"dnsResources\":{},\"connectResources\":{\"default\":{},\"anonymous\":{},\"credentials\":{}},\"imageResources\":{},\"styleResources\":{\"/_next/static/chunks/233p45nuh4m5b.css\":null,\"/_next/static/chunks/3o4fqibs9fnuv.css\":null},\"scriptResources\":{\"/_next/static/chunks/2snofpyg4ni2h.js\":null,\"/_next/static/chunks/3urtbe_z8owsy.js\":null,\"/_next/static/chunks/3peubv2924kx4.js\":null,\"/_next/static/chunks/2_fwnulrgh5vv.js\":null,\"/_next/static/chunks/1iv1-a5419qg7.js\":null,\"/_next/static/chunks/turbopack-1ass5d0y_pzqn.js\":null,\"/_next/static/chunks/40-gdhvr8g_lq.js\":null,\"/_next/static/chunks/0vk3nqty20h_-.js\":null,\"/_next/static/chunks/0_-jxg4l3y932.js\":null},\"moduleUnknownResources\":{},\"moduleScriptResources\":{\"/_next/static/chunks/2snofpyg4ni2h.js\":null}},\"replayNodes\":[[\"lU\",0,[[\"Context\",0,[[\"Context\",0,[[\"ServerInsertedHTMLProvider\",0,[[\"Context\",0,[[\"sI\",0,[[\"sf\",0,[[\"sd\",0,[[\"sc\",0,[[\"s$\",0,[[\"Fragment\",0,[[\"Context\",2,[[\"Context\",0,[[\"Context\",0,[[\"Context\",0,[[\"Context\",0,[[\"Context\",0,[[\"Context\",0,[[\"sf\",0,[[\"sd\",0,[[\"sc\",0,[[\"af\",0,[[\"ad\",0,[[\"__next_root_layout_boundary__\",1,[[\"Fragment\",\"c\",[[\"html\",1,[[\"body\",0,[[null,0,[[\"Context\",0,[[null,0,[[\"Context\",0,[[\"div\",0,[[\"Suspense\",0,[],0,[\"Suspense Fallback\",0,[],null],0],[\"main\",1,[[null,0,[[\"Activity\",\"orders\",[[\"Context\",\"orders\",[[null,2,[[\"Fragment\",0,[[\"L\",0,[[\"K\",0,[[\"n\",0,[[\"Fragment\",0,[[\"N\",0,[[\"Fragment\",0,[[null,0,[[\"h\",0,[[\"x\",0,[[\"w\",0,[[\"M\",0,[[\"Context\",0,[[\"Fragment\",\"c\",[[null,1,[[\"Activity\",\"__PAGE__\",[[\"Context\",\"__PAGE__\",[[null,2,[[\"Fragment\",0,[[\"L\",0,[[\"K\",0,[[\"n\",0,[[\"Fragment\",0,[[\"N\",0,[[\"Fragment\",0,[[null,0,[[\"Fragment\",0,[[\"x\",0,[[\"w\",0,[[\"M\",0,[[\"Context\",0,[[\"Fragment\",\"c\",[[\"div\",0,[[\"Suspense\",1,[],1,[\"Suspense Fallback\",1,[],null],1]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],null]],\"replaySlots\":null}]null",
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/orders/__PAGE__",
+    "/orders",
+    "/_index",
+    "/_head"
+  ]
+}

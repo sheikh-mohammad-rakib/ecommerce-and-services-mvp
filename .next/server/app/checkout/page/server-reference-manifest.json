@@ -1,0 +1,29 @@
+{
+  "node": {
+    "00e8678dcc13be7f9f06f64e20cb782fe333152612": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": 47970,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "exportedName": "getUserNotifications",
+      "filename": "app/actions/notifications.ts"
+    },
+    "4089ed13f5d90a11926407a1273d620edf2be28c80": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": 47970,
+          "async": true,
+          "exportedName": "placeOrder",
+          "filename": "app/actions/checkout.ts"
+        }
+      },
+      "exportedName": "placeOrder",
+      "filename": "app/actions/checkout.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/40-gdhvr8g_lq.js","/_next/static/chunks/0vk3nqty20h_-.js","/_next/static/chunks/1zm70-h96zdl2.js"],""]
+3:"$Sreact.suspense"
+5:I[97367,["/_next/static/chunks/40-gdhvr8g_lq.js","/_next/static/chunks/0vk3nqty20h_-.js"],"OutletBoundary"]
+7:[]
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"flex flex-col gap-6 px-4 py-4 bg-[#050811] flex-1 pb-16","children":[["$","$L2",null,{"href":"/services","className":"flex items-center gap-2 text-xs font-bold text-zinc-400 hover:text-white transition-colors w-fit","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left w-4 h-4","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]," সার্ভিস তালিকায় ফিরুন"]}],["$","$3",null,{"fallback":["$","div",null,{"className":"text-center py-20 text-zinc-500 text-sm animate-pulse","children":"সার্ভিস বিবরণী লোড হচ্ছে..."}],"children":"$L4"}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/1zm70-h96zdl2.js","async":true}]],["$","$L5",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":true,"staleTime":300,"varyParams":"$W7","buildId":"Wd5gAKz4UxE3m3F33jJvI"}
+6:null

@@ -1,0 +1,77 @@
+{
+  "node": {
+    "00e8678dcc13be7f9f06f64e20cb782fe333152612": {
+      "workers": {
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "exportedName": "getUserNotifications",
+      "filename": "app/actions/notifications.ts"
+    },
+    "00bdb9ddf489e9921f8a7f175f29f4022b459160be": {
+      "workers": {
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "logoutUser",
+          "filename": "app/actions/auth.ts"
+        }
+      },
+      "exportedName": "logoutUser",
+      "filename": "app/actions/auth.ts"
+    },
+    "805c06bb858b4715ade1f6fd8857cd4e15379f883a": {
+      "workers": {
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/dashboard/services/page.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_CACHE_0",
+      "filename": "app/dashboard/services/page.tsx"
+    },
+    "40dd636ff4b6f758f585bfa47dc39ea0dd6234f87d": {
+      "workers": {
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "createService",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "exportedName": "createService",
+      "filename": "app/actions/bookings.ts"
+    },
+    "60cc6e4bdf35a5b55892dd37aa13327ba27d8a8261": {
+      "workers": {
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "updateService",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "exportedName": "updateService",
+      "filename": "app/actions/bookings.ts"
+    },
+    "4071d00b8324aeee3997d028e5b3c336b6f2f30fe4": {
+      "workers": {
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "deleteService",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "exportedName": "deleteService",
+      "filename": "app/actions/bookings.ts"
+    }
+  },
+  "edge": {}
+}

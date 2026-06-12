@@ -1,0 +1,77 @@
+{
+  "node": {
+    "00e8678dcc13be7f9f06f64e20cb782fe333152612": {
+      "workers": {
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "exportedName": "getUserNotifications",
+      "filename": "app/actions/notifications.ts"
+    },
+    "401c4fd726dc6ad8e7e6d75bb8a3a7661b1a699211": {
+      "workers": {
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "deleteProduct",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "exportedName": "deleteProduct",
+      "filename": "app/actions/products.ts"
+    },
+    "40e2c8a46cab1855f5b1f83166ecd1aa180b06b118": {
+      "workers": {
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "createProduct",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "exportedName": "createProduct",
+      "filename": "app/actions/products.ts"
+    },
+    "60c5f2770777ac91f1bd6a52d88fd4959386d788ed": {
+      "workers": {
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "updateProduct",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "exportedName": "updateProduct",
+      "filename": "app/actions/products.ts"
+    },
+    "c057a5c8e27dafac79811aa247856dda1586cac9a8": {
+      "workers": {
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_1",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_CACHE_1",
+      "filename": "app/actions/products.ts"
+    },
+    "e0c16e65e70cfb41c03794aad8b0d32a7e511d2e5b": {
+      "workers": {
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_CACHE_0",
+      "filename": "app/actions/products.ts"
+    }
+  },
+  "edge": {}
+}

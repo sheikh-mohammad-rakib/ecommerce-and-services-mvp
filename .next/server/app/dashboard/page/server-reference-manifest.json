@@ -1,0 +1,53 @@
+{
+  "node": {
+    "00e8678dcc13be7f9f06f64e20cb782fe333152612": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 5131,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "exportedName": "getUserNotifications",
+      "filename": "app/actions/notifications.ts"
+    },
+    "00bdb9ddf489e9921f8a7f175f29f4022b459160be": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 5131,
+          "async": true,
+          "exportedName": "logoutUser",
+          "filename": "app/actions/auth.ts"
+        }
+      },
+      "exportedName": "logoutUser",
+      "filename": "app/actions/auth.ts"
+    },
+    "80c637142f4924198756c59737a414ddb37ad1395d": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 5131,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/dashboard/page.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_CACHE_0",
+      "filename": "app/dashboard/page.tsx"
+    },
+    "705b6a4ee9065b5ee4599ec66f116624aedf71c76b": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 5131,
+          "async": true,
+          "exportedName": "updateOrderStatus",
+          "filename": "app/actions/checkout.ts"
+        }
+      },
+      "exportedName": "updateOrderStatus",
+      "filename": "app/actions/checkout.ts"
+    }
+  },
+  "edge": {}
+}

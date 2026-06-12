@@ -1,0 +1,41 @@
+{
+  "node": {
+    "00e8678dcc13be7f9f06f64e20cb782fe333152612": {
+      "workers": {
+        "app/notifications/page": {
+          "moduleId": 94622,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "exportedName": "getUserNotifications",
+      "filename": "app/actions/notifications.ts"
+    },
+    "401653e4d3866e4abf6572a3eedc66c843f67aa896": {
+      "workers": {
+        "app/notifications/page": {
+          "moduleId": 94622,
+          "async": true,
+          "exportedName": "markNotificationRead",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "exportedName": "markNotificationRead",
+      "filename": "app/actions/notifications.ts"
+    },
+    "008146b27189f85dbc8f84d1ad14494c372170f0ae": {
+      "workers": {
+        "app/notifications/page": {
+          "moduleId": 94622,
+          "async": true,
+          "exportedName": "markAllNotificationsRead",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "exportedName": "markAllNotificationsRead",
+      "filename": "app/actions/notifications.ts"
+    }
+  },
+  "edge": {}
+}

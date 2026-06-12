@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/checkout/layout,_N_T_/checkout/success/layout,_N_T_/checkout/success/page,_N_T_/checkout/success"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/checkout/success/__PAGE__",
+    "/checkout/success",
+    "/checkout",
+    "/_index",
+    "/_head"
+  ]
+}

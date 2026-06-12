@@ -1,0 +1,29 @@
+{
+  "node": {
+    "00e8678dcc13be7f9f06f64e20cb782fe333152612": {
+      "workers": {
+        "app/profile/page": {
+          "moduleId": 78544,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "exportedName": "getUserNotifications",
+      "filename": "app/actions/notifications.ts"
+    },
+    "00bdb9ddf489e9921f8a7f175f29f4022b459160be": {
+      "workers": {
+        "app/profile/page": {
+          "moduleId": 78544,
+          "async": true,
+          "exportedName": "logoutUser",
+          "filename": "app/actions/auth.ts"
+        }
+      },
+      "exportedName": "logoutUser",
+      "filename": "app/actions/auth.ts"
+    }
+  },
+  "edge": {}
+}

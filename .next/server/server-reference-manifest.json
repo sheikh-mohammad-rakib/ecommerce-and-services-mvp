@@ -1,0 +1,768 @@
+{
+  "node": {
+    "00e8678dcc13be7f9f06f64e20cb782fe333152612": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": 14908,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/cart/page": {
+          "moduleId": 96379,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/categories/page": {
+          "moduleId": 97279,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/checkout/page": {
+          "moduleId": 47970,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/checkout/success/page": {
+          "moduleId": 52571,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/dashboard/categories/page": {
+          "moduleId": 59428,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/dashboard/page": {
+          "moduleId": 5131,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/dashboard/products/page": {
+          "moduleId": 39973,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/login/page": {
+          "moduleId": 86958,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/notifications/page": {
+          "moduleId": 94622,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/page": {
+          "moduleId": 46496,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/products/page": {
+          "moduleId": 81447,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/profile/page": {
+          "moduleId": 78544,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/register/page": {
+          "moduleId": 32675,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "getUserNotifications",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "filename": "app/actions/notifications.ts",
+      "exportedName": "getUserNotifications"
+    },
+    "803b9b8a0f99341def79c89d3f7d5b5f895f338b39": {
+      "workers": {
+        "app/page": {
+          "moduleId": 46496,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/page.tsx"
+        }
+      },
+      "filename": "app/page.tsx",
+      "exportedName": "$$RSC_SERVER_CACHE_0"
+    },
+    "805a1cc68ce72a882c4d57ff939db63e99e1b534ab": {
+      "workers": {
+        "app/categories/page": {
+          "moduleId": 97279,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/categories/page.tsx"
+        }
+      },
+      "filename": "app/categories/page.tsx",
+      "exportedName": "$$RSC_SERVER_CACHE_0"
+    },
+    "4089ed13f5d90a11926407a1273d620edf2be28c80": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": 47970,
+          "async": true,
+          "exportedName": "placeOrder",
+          "filename": "app/actions/checkout.ts"
+        },
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "placeOrder",
+          "filename": "app/actions/checkout.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "placeOrder",
+          "filename": "app/actions/checkout.ts"
+        }
+      },
+      "filename": "app/actions/checkout.ts",
+      "exportedName": "placeOrder"
+    },
+    "00bdb9ddf489e9921f8a7f175f29f4022b459160be": {
+      "workers": {
+        "app/dashboard/categories/page": {
+          "moduleId": 59428,
+          "async": true,
+          "exportedName": "logoutUser",
+          "filename": "app/actions/auth.ts"
+        },
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "logoutUser",
+          "filename": "app/actions/auth.ts"
+        },
+        "app/dashboard/page": {
+          "moduleId": 5131,
+          "async": true,
+          "exportedName": "logoutUser",
+          "filename": "app/actions/auth.ts"
+        },
+        "app/dashboard/products/page": {
+          "moduleId": 39973,
+          "async": true,
+          "exportedName": "logoutUser",
+          "filename": "app/actions/auth.ts"
+        },
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "logoutUser",
+          "filename": "app/actions/auth.ts"
+        },
+        "app/profile/page": {
+          "moduleId": 78544,
+          "async": true,
+          "exportedName": "logoutUser",
+          "filename": "app/actions/auth.ts"
+        }
+      },
+      "filename": "app/actions/auth.ts",
+      "exportedName": "logoutUser"
+    },
+    "80c637142f4924198756c59737a414ddb37ad1395d": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 5131,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/dashboard/page.tsx"
+        }
+      },
+      "filename": "app/dashboard/page.tsx",
+      "exportedName": "$$RSC_SERVER_CACHE_0"
+    },
+    "705b6a4ee9065b5ee4599ec66f116624aedf71c76b": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "updateOrderStatus",
+          "filename": "app/actions/checkout.ts"
+        },
+        "app/dashboard/page": {
+          "moduleId": 5131,
+          "async": true,
+          "exportedName": "updateOrderStatus",
+          "filename": "app/actions/checkout.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "updateOrderStatus",
+          "filename": "app/actions/checkout.ts"
+        }
+      },
+      "filename": "app/actions/checkout.ts",
+      "exportedName": "updateOrderStatus"
+    },
+    "807a40fcdbb57d28623ada07351790e38e1ddfec95": {
+      "workers": {
+        "app/dashboard/categories/page": {
+          "moduleId": 59428,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/dashboard/categories/page.tsx"
+        }
+      },
+      "filename": "app/dashboard/categories/page.tsx",
+      "exportedName": "$$RSC_SERVER_CACHE_0"
+    },
+    "00eb5979117d6afe8cf31a5ab090f2d2937c7c1440": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "getOrders",
+          "filename": "app/actions/checkout.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "getOrders",
+          "filename": "app/actions/checkout.ts"
+        }
+      },
+      "filename": "app/actions/checkout.ts",
+      "exportedName": "getOrders"
+    },
+    "00d7d364d190ec7ec92b0e9ed2021a2fe97dd8c20d": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "getBookings",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "getBookings",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "getBookings",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "getBookings",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "getBookings"
+    },
+    "4071d00b8324aeee3997d028e5b3c336b6f2f30fe4": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "deleteService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "deleteService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "deleteService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "deleteService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "deleteService",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "deleteService"
+    },
+    "40dd636ff4b6f758f585bfa47dc39ea0dd6234f87d": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "createService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "createService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "createService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "createService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "createService",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "createService"
+    },
+    "60cc6e4bdf35a5b55892dd37aa13327ba27d8a8261": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "updateService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "updateService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "updateService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "updateService",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "updateService",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "updateService"
+    },
+    "70bd6637601009573f763127cba4e50ca78fc8eb93": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "createBooking",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "createBooking",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "createBooking",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "createBooking",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "createBooking"
+    },
+    "70f16d79b9cd5c177be64bba66884a2995ad2cc837": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "updateBookingStatus",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "updateBookingStatus",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "updateBookingStatus",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "updateBookingStatus",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "updateBookingStatus"
+    },
+    "c00f68dc46c13bd1e714d0d006aabda79faf9c3a17": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_1",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_1",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_1",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_1",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "$$RSC_SERVER_CACHE_1"
+    },
+    "e04c65fd244011cbeba432861acc6286ffd359fc8b": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "$$RSC_SERVER_CACHE_0"
+    },
+    "e064a4feb12f118c6a7e30f438012d6e92b6ce4025": {
+      "workers": {
+        "app/dashboard/orders/page": {
+          "moduleId": 64618,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_2",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/orders/page": {
+          "moduleId": 89927,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_2",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_2",
+          "filename": "app/actions/bookings.ts"
+        },
+        "app/services/page": {
+          "moduleId": 96866,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_2",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "$$RSC_SERVER_CACHE_2"
+    },
+    "8075deca29c2e56b74aa69699e38f8ae531d57af84": {
+      "workers": {
+        "app/dashboard/products/page": {
+          "moduleId": 39973,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/dashboard/products/page.tsx"
+        }
+      },
+      "filename": "app/dashboard/products/page.tsx",
+      "exportedName": "$$RSC_SERVER_CACHE_0"
+    },
+    "40e2c8a46cab1855f5b1f83166ecd1aa180b06b118": {
+      "workers": {
+        "app/dashboard/products/page": {
+          "moduleId": 39973,
+          "async": true,
+          "exportedName": "createProduct",
+          "filename": "app/actions/products.ts"
+        },
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "createProduct",
+          "filename": "app/actions/products.ts"
+        },
+        "app/products/page": {
+          "moduleId": 81447,
+          "async": true,
+          "exportedName": "createProduct",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "filename": "app/actions/products.ts",
+      "exportedName": "createProduct"
+    },
+    "60c5f2770777ac91f1bd6a52d88fd4959386d788ed": {
+      "workers": {
+        "app/dashboard/products/page": {
+          "moduleId": 39973,
+          "async": true,
+          "exportedName": "updateProduct",
+          "filename": "app/actions/products.ts"
+        },
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "updateProduct",
+          "filename": "app/actions/products.ts"
+        },
+        "app/products/page": {
+          "moduleId": 81447,
+          "async": true,
+          "exportedName": "updateProduct",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "filename": "app/actions/products.ts",
+      "exportedName": "updateProduct"
+    },
+    "401c4fd726dc6ad8e7e6d75bb8a3a7661b1a699211": {
+      "workers": {
+        "app/dashboard/products/page": {
+          "moduleId": 39973,
+          "async": true,
+          "exportedName": "deleteProduct",
+          "filename": "app/actions/products.ts"
+        },
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "deleteProduct",
+          "filename": "app/actions/products.ts"
+        },
+        "app/products/page": {
+          "moduleId": 81447,
+          "async": true,
+          "exportedName": "deleteProduct",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "filename": "app/actions/products.ts",
+      "exportedName": "deleteProduct"
+    },
+    "805c06bb858b4715ade1f6fd8857cd4e15379f883a": {
+      "workers": {
+        "app/dashboard/services/page": {
+          "moduleId": 50285,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/dashboard/services/page.tsx"
+        }
+      },
+      "filename": "app/dashboard/services/page.tsx",
+      "exportedName": "$$RSC_SERVER_CACHE_0"
+    },
+    "6036f2373416317b511935a62878245e733826e7ca": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": 86958,
+          "async": true,
+          "exportedName": "loginUser",
+          "filename": "app/actions/auth.ts"
+        }
+      },
+      "filename": "app/actions/auth.ts",
+      "exportedName": "loginUser"
+    },
+    "401653e4d3866e4abf6572a3eedc66c843f67aa896": {
+      "workers": {
+        "app/notifications/page": {
+          "moduleId": 94622,
+          "async": true,
+          "exportedName": "markNotificationRead",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "filename": "app/actions/notifications.ts",
+      "exportedName": "markNotificationRead"
+    },
+    "008146b27189f85dbc8f84d1ad14494c372170f0ae": {
+      "workers": {
+        "app/notifications/page": {
+          "moduleId": 94622,
+          "async": true,
+          "exportedName": "markAllNotificationsRead",
+          "filename": "app/actions/notifications.ts"
+        }
+      },
+      "filename": "app/actions/notifications.ts",
+      "exportedName": "markAllNotificationsRead"
+    },
+    "c057a5c8e27dafac79811aa247856dda1586cac9a8": {
+      "workers": {
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_1",
+          "filename": "app/actions/products.ts"
+        },
+        "app/products/page": {
+          "moduleId": 81447,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_1",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "filename": "app/actions/products.ts",
+      "exportedName": "$$RSC_SERVER_CACHE_1"
+    },
+    "e0c16e65e70cfb41c03794aad8b0d32a7e511d2e5b": {
+      "workers": {
+        "app/products/[id]/page": {
+          "moduleId": 21569,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/actions/products.ts"
+        },
+        "app/products/page": {
+          "moduleId": 81447,
+          "async": true,
+          "exportedName": "$$RSC_SERVER_CACHE_0",
+          "filename": "app/actions/products.ts"
+        }
+      },
+      "filename": "app/actions/products.ts",
+      "exportedName": "$$RSC_SERVER_CACHE_0"
+    },
+    "607054ec67e8533aa1d53af7db2462a9973d021aa6": {
+      "workers": {
+        "app/register/page": {
+          "moduleId": 32675,
+          "async": true,
+          "exportedName": "registerUser",
+          "filename": "app/actions/auth.ts"
+        }
+      },
+      "filename": "app/actions/auth.ts",
+      "exportedName": "registerUser"
+    },
+    "e06e3bd86d7e062b5e99d7949151064ace8b56062e": {
+      "workers": {
+        "app/services/[id]/page": {
+          "moduleId": 93455,
+          "async": true,
+          "exportedName": "getBookedSlots",
+          "filename": "app/actions/bookings.ts"
+        }
+      },
+      "filename": "app/actions/bookings.ts",
+      "exportedName": "getBookedSlots"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "+2tZ2e5JoWoNgqMHKGaKIw+DJ0+5wmsSbu9u4EYY5MI="
+}
