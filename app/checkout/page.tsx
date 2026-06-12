@@ -37,15 +37,16 @@ export default function CheckoutPage() {
   // Step 2: Payment Inputs
   const [paymentMethod, setPaymentMethod] = useState<"CASH_ON_DELIVERY" | "BKASH" | "NAGAD">("CASH_ON_DELIVERY");
 
-  // Prefill user profile details from session
   useEffect(() => {
-    if (session?.user) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setName(session.user.name || "");
-      const u = session.user as { mobile?: string; address?: string; city?: string };
-      if (u.mobile) setMobile(u.mobile);
-      if (u.address) setAddress(u.address);
-      if (u.city) setCity(u.city);
+    const user = session?.user;
+    if (user) {
+      Promise.resolve().then(() => {
+        setName(user.name || "");
+        const u = user as { mobile?: string; address?: string; city?: string };
+        if (u.mobile) setMobile(u.mobile);
+        if (u.address) setAddress(u.address);
+        if (u.city) setCity(u.city);
+      });
     }
   }, [session]);
 

@@ -15,7 +15,7 @@ type OrderItem = {
   };
 };
 
-type Order = {
+export type Order = {
   id: string;
   createdAt: string;
   shippingAddress: string | null;
@@ -32,7 +32,7 @@ type Order = {
   items: OrderItem[];
 };
 
-type Booking = {
+export type Booking = {
   id: string;
   date: string;
   timeSlot: string;

@@ -1,6 +1,7 @@
 import { getOrders } from "@/app/actions/checkout";
 import { getBookings } from "@/app/actions/bookings";
 import ClientOrdersManagement from "./client-orders-management";
+import type { Order, Booking } from "./client-orders-management";
 import { Suspense } from "react";
 
 async function OrdersContainer() {
@@ -8,26 +9,53 @@ async function OrdersContainer() {
   const [orders, bookings] = await Promise.all([getOrders(), getBookings()]);
 
   // Serialize dates to prevent RSC boundary issues
-  const serializedOrders = orders.map((order) => ({
-    ...order,
-    createdAt: order.createdAt instanceof Date ? order.createdAt.toISOString() : order.createdAt,
+  const serializedOrders: Order[] = orders.map((order) => ({
+    id: order.id,
+    createdAt: order.createdAt instanceof Date ? order.createdAt.toISOString() : String(order.createdAt),
+    shippingAddress: order.shippingAddress,
+    city: order.city,
+    mobile: order.mobile,
+    paymentMethod: order.paymentMethod,
+    paymentStatus: order.paymentStatus,
+    status: order.status,
+    totalAmount: order.totalAmount,
+    user: {
+      name: order.user?.name || null,
+      email: order.user?.email || null,
+    },
     items: order.items.map((item) => ({
-      ...item,
-      createdAt: item.createdAt instanceof Date ? item.createdAt.toISOString() : item.createdAt,
+      id: item.id,
+      quantity: item.quantity,
+      price: item.price,
+      product: {
+        name: item.product.name,
+      },
     })),
   }));
 
-  const serializedBookings = bookings.map((booking) => ({
-    ...booking,
-    date: booking.date instanceof Date ? booking.date.toISOString() : booking.date,
+  const serializedBookings: Booking[] = bookings.map((booking) => ({
+    id: booking.id,
+    date: booking.date instanceof Date ? booking.date.toISOString() : String(booking.date),
+    timeSlot: booking.timeSlot,
+    paymentMethod: booking.paymentMethod,
+    paymentStatus: booking.paymentStatus,
+    status: booking.status,
+    user: {
+      name: booking.user?.name || null,
+      email: booking.user?.email || null,
+      mobile: booking.user?.mobile || null,
+    },
+    service: {
+      name: booking.service.name,
+      price: booking.service.price,
+      duration: booking.service.duration,
+    },
   }));
 
   return (
     <ClientOrdersManagement
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      initialOrders={serializedOrders as any}
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      initialBookings={serializedBookings as any}
+      initialOrders={serializedOrders}
+      initialBookings={serializedBookings}
     />
   );
 }

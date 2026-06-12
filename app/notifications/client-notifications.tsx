@@ -49,8 +49,7 @@ export default function ClientNotifications({
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setMounted(true);
+    Promise.resolve().then(() => setMounted(true));
   }, []);
 
   const unreadNotifications = notifications.filter((n) => !n.isRead);

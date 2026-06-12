@@ -140,7 +140,7 @@ export async function getOrders() {
     } else {
       return await prisma.order.findMany({
         where: { userId },
-        include: { items: { include: { product: true } } },
+        include: { user: true, items: { include: { product: true } } },
         orderBy: { createdAt: "desc" },
       });
     }

@@ -161,7 +161,7 @@ export async function getBookings() {
     } else {
       return await prisma.booking.findMany({
         where: { userId },
-        include: { service: true },
+        include: { user: true, service: true },
         orderBy: { date: "desc" },
       });
     }
